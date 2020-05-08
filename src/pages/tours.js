@@ -13,7 +13,7 @@ const tours = ({ data }) => {
 
 export const query = graphql`
   query {
-    toursBcg: file(relativePath: { eq: "seashoreBcg.jpeg" }) {
+    toursBcg: file(relativePath: { eq: "seashoreBcg.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
