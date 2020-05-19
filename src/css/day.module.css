@@ -1,5 +1,6 @@
 .day {
   margin: 2rem 0;
+  /* transition: var(--mainTransition); */
 }
 .day h4 {
   display: flex;
@@ -16,10 +17,19 @@
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
-.day p {
+.info {
   line-height: 2;
   transition: var(--mainTransition);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
+
+.show-info {
+  height: auto;
+  opacity: 1;
+}
+
 @media screen and (min-width: 992px) {
   .day h4 {
     width: 400px;
